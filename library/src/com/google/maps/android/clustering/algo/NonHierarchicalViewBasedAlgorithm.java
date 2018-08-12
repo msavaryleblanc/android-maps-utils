@@ -79,8 +79,8 @@ public class NonHierarchicalViewBasedAlgorithm<T extends ClusterItem>
 
         Point p = PROJECTION.toPoint(mMapCenter);
 
-        final double halfWidthSpan = mViewWidth / Math.pow(2, zoom) / 256 / 2;
-        final double halfHeightSpan = mViewHeight / Math.pow(2, zoom) / 256 / 2;
+        final double halfWidthSpan = mViewWidth / Math.pow(2, zoom) / 256 / 4;
+        final double halfHeightSpan = mViewHeight / Math.pow(2, zoom) / 256 / 8;
 
         return new Bounds(
                 p.x - halfWidthSpan, p.x + halfWidthSpan,
